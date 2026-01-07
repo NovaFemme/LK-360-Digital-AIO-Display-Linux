@@ -1,5 +1,7 @@
 # LK Digital Display for Linux 🐧
 
+**Why this project exists: The Xigmatek LK 360 Digital AIO cooler has a beautiful LCD display for system monitoring, but the official software only supports Windows. Linux users – especially those with newer AMD GPUs like the RX 9070 XT – were left without any way to use this hardware feature. This project provides a fully native Linux solution using Python and kernel interfaces, with no Wine or Windows dependencies required.**
+
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Linux-green?logo=linux" alt="Linux">
   <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python" alt="Python 3.10+">
