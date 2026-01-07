@@ -1,0 +1,27 @@
+[Unit]
+Description=LK Digital Display Service
+Documentation=https://github.com/yourusername/lk-display-linux
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/lk-display/lk_display.py
+WorkingDirectory=/opt/lk-display
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Run as root for hardware access (or use udev rules + specific user)
+User=root
+Group=root
+
+# Security hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/log /opt/lk-display
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,21 @@
+# udev rules for LK Digital Display
+# Allows non-root users in the 'plugdev' group to access the HID devices
+#
+# Installation:
+#   sudo cp 99-lk-display.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload-rules
+#   sudo udevadm trigger
+#
+# Then add your user to the plugdev group:
+#   sudo usermod -a -G plugdev $USER
+# Log out and back in for group changes to take effect.
+
+# GAMDIAS ATLAS AIO Cooler LCD Display
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1b80", ATTRS{idProduct}=="b538", MODE="0666", GROUP="plugdev"
+
+# HWCX Controller
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0145", ATTRS{idProduct}=="1005", MODE="0666", GROUP="plugdev"
+
+# Generic USB HID devices from same vendors (in case of different PIDs)
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1b80", MODE="0666", GROUP="plugdev"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0145", MODE="0666", GROUP="plugdev"
