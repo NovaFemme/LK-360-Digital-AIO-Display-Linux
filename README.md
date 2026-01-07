@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <b>Native Linux support for GAMDIAS ATLAS AIO cooler LCD displays</b><br>
+  <b>Native Linux support for Xigmatek LK 360 Digital AIO cooler LCD displays</b><br>
   Real-time CPU and GPU monitoring without Wine or Windows dependencies
 </p>
 
@@ -48,7 +48,7 @@ Your AIO cooler display will show real-time system stats:
 
 | Device | Vendor ID | Product ID | Status |
 |--------|-----------|------------|--------|
-| GAMDIAS ATLAS AIO | `0x1B80` | `0xB538` | ✅ Fully Supported |
+| Xigmatek LK 360 Digital AIO | `0x1B80` | `0xB538` | ✅ Fully Supported |
 | HWCX Controller | `0x0145` | `0x1005` | ✅ Fully Supported |
 
 ### Tested Distributions
@@ -86,7 +86,7 @@ Your AIO cooler display will show real-time system stats:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/lk-display-linux.git
+git clone https://github.com/NovaFemme/lk-display-linux.git
 cd lk-display-linux
 
 # Run the installer
@@ -364,20 +364,10 @@ lk-display-linux/
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Here are some ways you can help:
-
-- 🐛 Report bugs
-- 💡 Suggest features
-- 🔧 Submit pull requests
-- 📖 Improve documentation
-- 🧪 Test on different hardware/distros
-
 ### Development Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/lk-display-linux.git
+git clone https://github.com/NovaFemme/lk-display-linux.git
 cd lk-display-linux
 
 # Run in debug mode for development
@@ -398,13 +388,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [lm-sensors](https://github.com/lm-sensors/lm-sensors) project
 - Linux kernel hwmon subsystem developers
 - The Linux community
-
----
-
-## 📞 Support
-
-- **Issues:** [GitHub Issues](https://github.com/YOUR_USERNAME/lk-display-linux/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/YOUR_USERNAME/lk-display-linux/discussions)
 
 ---
 
